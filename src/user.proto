@@ -1,0 +1,13 @@
+syntax="proto3";
+
+package user;
+
+service AppService {
+  rpc hello(Empty) returns(Hello);
+}
+
+message Empty {}
+
+message Hello {
+  string instance = 1;
+}
